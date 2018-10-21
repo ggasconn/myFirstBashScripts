@@ -3,7 +3,7 @@
 # Explanation
 This is just another place to keep my class work uploaded and organized.
 
-#Usage
+# Usage
 If for some reason you've stumbled across this and you want to try any of them just type the next commands:
 ```bash
 git clone https://github.com/ggasconn/myFirstBashScripts

@@ -1,0 +1,14 @@
+client balance
+mike 312
+john 231
+anthony 12
+steve 231
+adam 42
+bob 523
+sara 429
+jacob 451
+manson 645
+amanda 42
+sofia 12
+logan 235
+benjamin 243

@@ -5,7 +5,7 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-for i in `find $1 -iname "*.zip"`; do
+for i in `find $1 -name "*.zip"`; do
   path=${i::-4}
   unzip $i -d $path
 done

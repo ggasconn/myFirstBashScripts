@@ -6,7 +6,12 @@ if [ $# -ne 3 ]; then
   exit 1
 fi
 
-groupadd $3
+if grep -q $3 /etc/group; then
+  printf "\nGroup $3 already exists, skipping...\n"
+else
+   groupadd $3
+fi
+
 if ! [[ -d /root/logs/ ]]; then
   mkdir /root/logs/
 fi
@@ -17,10 +22,12 @@ fi
 
 for ((i=0; i<=9; i++)); do
   useradd $1-$i -p $2 -G $3
-  echo "- Created user: $1-$i at `date` - " >> /root/logs/usersLog.txt
+  if [ $? == 0 ]; then
+    echo "- Created user: $1-$i at `date` -" >> /root/logs/usersLog.txt
+  fi
 done
 
-if [ -d $2 ]; then
+if [ -d $3 ]; then
   printf "\n\tError creating the specified directoy. Already exists\n"
 else
   mkdir /home/$3

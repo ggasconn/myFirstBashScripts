@@ -1,5 +1,9 @@
-realiza un shell script que haga lo siguiente:
-a)crear 10 usuarios con sus contraseñas y que todos pertenezcan al mismo grupo, 
-b)creando un directorio con los permisos para que todos los usuarios del grupo puedan acceder y leer su contenido. el nombre del directorio ha de coincidir con el nombre del grupo.
-c)ademas cada vez que se utilize este script ha de escribir en un fichero situado en /root/logs insertando, 
+Realiza un shell script que haga lo siguiente:
+
+a)Crear 10 usuarios con sus contraseñas y que todos pertenezcan al mismo grupo.
+
+b)Creando un directorio con los permisos para que todos los usuarios del grupo
+puedan acceder y leer su contenido. el nombre del directorio ha de coincidir con el nombre del grupo.
+
+c)Ademas cada vez que se utilize este script ha de escribir en un fichero situado en /root/logs insertando,
 1º el nombre de los usuarios, 2º agregar fecha y hora, 3º insertar una linea de separacion mediante guiones. 

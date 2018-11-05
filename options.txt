@@ -1,8 +1,0 @@
-"Show 10 process consuming more CPU"
-"Show 10 process consuming more memory"
-"Kill a process by its number"
-"Copy a file from files older than 7 days"
-"List the content of a given directory"
-"Check if the given files are present in a given directory"
-"Given a directory decompress the .zip files inside it"
-"Exit"
